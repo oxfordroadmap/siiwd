@@ -1,0 +1,64 @@
+project:
+  type: book
+  output-dir: docs
+  # see GitHub Pages (publishing) https://quarto.org/docs/publishing/github-pages.html
+
+book:
+#####  cover-image: figures/siiwd.png
+  title: "Seeking Interactive Insights with Data"
+  subtitle: "Building Agentic Apps with Pydantic, Pandas, and Panel"
+  description: | 
+    {{ _('book.description.en') }} Seeking Interactive Insights with Data⸺Building Agentic Apps with Pydantic, Pandas, and Panel
+    {{ _('book.description.zh_hant') }} 實據求是的互動洞察⸺用 Pydantic、Pandas 和 Panel 打造智能體應用程式
+  page-footer: | 
+    {{ _('book.description.page_footer.en') }} 【Seeking Interactive Insights with Data】Author: Han-Teng Liao"
+    {{ _('book.description.page_footer.zh_hant') }} 【實據求是的互動洞察】作者 Han-Teng Liao"
+  author: "Han-Teng Liao"
+  date: "27 Aug 2025"
+  search: true
+  repo-url: https://github.com/oxfordroadmap/siwd
+  repo-actions: [edit]
+  site-url: https://oxfordroadmap.github.io/siwd
+  sidebar:
+    collapse-level: 3
+    pinned: true
+  chapters:
+    - index.qmd
+    - part: "Ⅰ. Read ..."
+      chapters: 
+        - part-i-Read.qmd
+        - 01-tokens-as-knowledge.qmd
+    - part: "Ⅱ. Visualize ..."  
+      chapters: 
+        - part-ii-Visualize.qmd
+    - part: "Ⅲ. Respond ..."  
+      chapters: 
+        - part-iii-Respond.qmd
+    - part: "Ⅳ. Contextualize ..."  
+      chapters: 
+        - part-iv-Contextualize.qmd
+    - part: "Ⅴ. Reflect & Scaffold"
+      chapters: 
+        - part-v-Reflect.qmd
+    - part: "ↇ. Definitions"
+      chapters: 
+        - part-D-def.qmd
+
+crossref:
+  appendix-title: "Appendix"
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - custom.scss
+    callout-appearance: simple
+    toc-title: "本頁大綱"
+    toc-depth: 3
+
+## Environment variables
+jupyter: mygeocompy
+execute:
+  freeze: auto  # Or use eval: false if not caching
+  engine: python
+  python: "C:/ProgramData/miniconda3/envs/mygeocompy/python.exe"
