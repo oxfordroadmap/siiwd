@@ -2,6 +2,8 @@
 project:
   type: book
   output-dir: docs
+  execute-dir: project  # relative to the root folder, ensures consistent working directory
+  notebook-dir: notebooks  # 👈 redirects .quarto_ipynb files here
   # see GitHub Pages (publishing) https://quarto.org/docs/publishing/github-pages.html
 
 book:
