@@ -1,0 +1,63 @@
+---
+title: "Chapter 1 — Tokens as Knowledge Elements"
+author: "Liao, Han-Teng"
+slug: chapter-01-tokens-as-knowledge
+output: 
+  html: 
+    mathjax: true
+    toc: true
+jupyter: siiwd
+---
+
+## 🧠 Section 1.1 — What Are Tokens in Structured Knowledge?
+
+- 🧩 Tokens represent semantic building blocks, not just words or symbols  
+- 🧠 They can denote concepts, data labels, tags, or prompts  
+- 📚 Markdown and YAML formats turn prose into retrievable token structures  
+- 💬 In LLM contexts, tokens define attention granularity and retrievable context  
+
+## ✍️ Section 1.2 — From Prose to Symbolic Knowledge Assets
+
+- 🔤 Treat prose as symbolic representations ready for computation  
+- ✂️ Segment markdown via headers, bullet points, fenced code blocks  
+- 🗂️ Reframe knowledge assets as token containers for modular reuse  
+- 🔄 Enable version control and reproducibility with token-oriented workflows  
+
+## 📊 Section 1.3 — Structured Data: Numerical, Categorical, and More
+
+- 🧮 **Numerical Data**: integers, floats, measurements — useful for filtering and statistical evaluation  
+- 🏷️ **Categorical Data**: enums, tags, labels — for semantic classification or grouping  
+- 📦 **Token, Categorical, and Numeric Relationships**:
+  - `pandas`: assigns `dtype` for operations and plots  
+  - `pydantic`: validates via field constraints, e.g. `Field(..., ge=0)`  
+- 🔎 Examples:
+  - `token_count` ➝ numerical for chunk heuristics  
+  - `section_tag` ➝ categorical for chapter alignment  
+- 🎯 Purpose:
+  - 🌱 Chunk validation and filtering  
+  - 📈 Glossary and frequency analysis  
+  - 🧠 Tag-driven RAG optimization  
+
+## 🧩 Section 1.4 — Chunking, Indexing, and Glossary Mapping
+
+- ✂️ Divide markdown into chunks using structure-aware heuristics  
+- 🔗 Create chunk IDs, semantic keys, and anchor tags  
+- 🧾 Build glossary definitions via YAML-based schema  
+- 📚 Align retrieval blocks with semantic tags for chunk selection  
+
+## 📁 Section 1.5 — Controlled Vocabularies and Reproducibility
+
+- 📖 Use YAML fields for semantic richness: `tags`, `sections`, `source`  
+- 📦 Pydantic helps enforce reproducibility with strict schemas  
+- 🎓 Encourage version-controlled vocabularies for collaborative curation  
+- 🔄 Facilitate glossary expansion and semantic normalization  
+
+## 🧪 Section 1.6 — Implications for TutorBot Reader Project
+
+- 🎯 Tokens form the foundation for retrieval and semantic mapping  
+- 🧩 Glossary terms and section labels enrich retrieval prompts  
+- 💬 Streamlined chat pipelines rely on proper token structure  
+- 📊 Support retrieval feedback loops using numerical filters and tag frequencies  
+
+---
+

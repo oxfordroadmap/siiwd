@@ -1,0 +1,201 @@
+---
+title: "Part Ⅰ Read"
+author: "Liao, Han-Teng"
+format: html
+slug: part-i-Read
+output: 
+  html: 
+    toc: true
+    theme: cosmo
+jupyter: siiwd
+---
+
+## 🎯 Overview: What, How, and So What?
+
+Learners practize foundational knowledge of RAGs and LLMs by building a TutorBot. The TutorBot can can **read, visualize, respond, and contextualize** data.
+
+### 🌊 Reflective Question in Action
+> How Can Tokenized Thinking Assist Your Learning 
+
+The **TutorBot Reader** will use the World CIA Factbook to illustrate various functionalities, by which learners can use other data sources to begin their own learning journeys.  
+
+### 🧠 What is TutorBot Reader?
+The **TutorBot Reader** is a mini retrieval-augmented chatbot that:
+- Ingests markdown documents from Part I chapters
+- Retrieves context blocks based on keywords
+- Responds to queries using local or cloud LLMs (e.g., via Ollama)
+
+### 🛠️ How is it built?
+- Leverages structured markdown files as the knowledge base
+- Applies chunking and filtering for RAG-based retrieval
+- Uses `panel.chat.ChatInterface` for interaction
+- Supports streaming responses and system memory
+
+### 🚀 So What?
+This mini project reinforces:
+- 📚 Chapter concepts by applying them interactively
+- 🧩 Chunking, retrieval, and structured prompting
+- 🎓 Self-guided learning and feedback refinement
+
+### **🔑 Key Objectives**  
+This project guides learners to:
+
+* ✍️ Author and process semantically tagged global knowledge units
+* 🧠 Apply structured data (including metadata) and prompts to scaffold analytical conversations
+* 🧩 Query across categorical, numerical, and unstructured input data with interactive applications.
+* 📈 Empower TutorBot users (themselves and other learners) with data-rich and feedback-aware explorations
+
+### **🔑 Key Concepts**  
+- Modular knowledge representation  
+- Semantic scaffolding and structured retrieval  
+- Feedback-driven interactivity with LLMs  
+
+### **🛠️ Key Tools**  
+- Ollama (Local LLM deployment)  
+- Pydantic (metadata validation)  
+- Pandas (chunk analysis and filtering)  
+- Panel (chat interface and dashboard visualization)  
+
+---
+
+## 🧩 Chapter Breakdown: From Knowledge Tokens to Interactive RAG Chatbots
+
+Part I begins with a mini project called `TutorBot` that integrates layered progressive capabilities as learners acquired practical and conceptual knowledge regarding the format, structure, and manipulation of text data, including the notion of token data as the constituting elements of knowledge. Learners build their own TutorBots and reflect on the capabilities of  `tokenized thinking` in their learning journeys. 
+
+Each chapter demonstrate the functionalities in a progressive fashion, from the easiest to the most challenging.
+
+## 📑 Chapter Outline (Part I)
+
+- [📗 Chapter 1 — Tokens as Knowledge Elements](chapter-01-knowledge-as-code.qmd)  
+  _Subheadings_:  
+- What are “tokens” in structured knowledge representation?
+- From prose to symbolic knowledge assets
+- Chunking, indexing, and controlled vocabularies at token level
+
+- [📙 Chapter 2 — Markdown in Knowledge Construction](chapter-02-markdown-knowledge-construction.qmd)  
+  _Subheadings_:  
+  - Markdown as a structured writing language  
+  - Enhancing semantic clarity with markup  
+  - Modular composition of knowledge assets
+
+- [🟨 Chapter 3 — YAML for Semantic Tagging](chapter-03-yaml-semantic-tagging.qmd)  
+  _Subheadings_:  
+  - YAML headers for metadata structure  
+  - Semantic fields and controlled vocabularies  
+  - Linking knowledge via tags and glossaries
+
+- [🧵 Chapter 4 — Panel for Interactive Chatbot](chapter-04-panel-chatbot-interface.qmd)  
+  _Subheadings_:  
+  - ChatInterface and user interactivity  
+  - Streaming and memory-aware responses  
+  - Layout and feedback visualization with Panel
+
+- [🤖 Chapter 5 — Mini Project: TutorBot Reader](chapter-05-tutorbot-reader.qmd)  
+  _Subheadings_:  
+  - Project overview and learning goals  
+  - Chunking and retrieval pipeline  
+  - Chat interface and metadata logging  
+  - Evaluation, extensions, and next steps  
+
+---
+
+---
+
+## 🎯 Mini-Project Details
+
+Each chapter guide learns through progressive data workflows:
+
+### 📗 Chapter 1
+- 🌎 Tokenize CIA Factbook semi-structured data into modular units for further analysis  
+- 🏷️ Label data with metadata tags like region, political system, population size  
+- 🧠 Associate tokens and prompts with Bloom-style verbs: "Compare governance types", "Analyze economic indicators"
+
+### 📙 Chapter 2
+- 🌐 Embed Factbook data blocks into semantic markdown sections (e.g. country profiles, comparative statistics)  
+- 🧱 Decompose content with YAML identifiers like `"source: CIA Factbook"` or `"region: Sub-Saharan Africa"`  
+- 🔍 Enable programmatic extraction of region-specific metadata for dynamic querying
+
+### 🟨 Chapter 3 
+- 🧷 Structure Factbook-derived glossaries for demographic, ecological, and governance terms  
+- 🔗 Tag chunks with `"economic_status: developing"` or `"military: conscription"` for retrieval filtering  
+- 🧬 Identify and embed the metadata of the data source into taxonomies and glossaries for effective retrieval and comparative dashboards (e.g. country data explorer using CIA world fact book)
+
+### 🧵 Chapter 4
+- 💬 TutorBot can answer: “Which countries in Asia have the top GDP per capita?” using Factbook queries  
+- 💪 Capture learner curiosity via feedback prompts: “Show literacy rates in South America”  
+- 📈 Visualize responses with country maps or socioeconomic bar charts powered by Factbook fields
+
+### 🤖 Chapter 5
+- 🎓 Respond to comparative questions like “How do Vietnam and Philippines differ in exports and education?”  
+- 🔄 Enrich user experience with responses such as “Did you mean climate zone?” and inject appropriate Factbook tags  
+- 📊 Auto-score chunks with retrieval metrics: “CIA_Factbook_completeness”, “geographic relevance”, “user helpfulness”
+
+### 🧪 Features 
+The Mini-Project
+- 🎓 Align chatbot architecture with learner-facing instructional goals
+- ⛏ Build a chunking and retrieval pipeline informed by YAML metadata and glossary tagging
+- 🛠️ Inject instructional roles, semantic scaffolds, and prompt templates into response logic
+- 📊 Log conversational responses and visualize interaction patterns for review
+- 🔄 Enable enrichment via feedback-driven chunk scoring and dynamic glossaries
+- 📏 Address system constraints: embedding quality, context window limitations, and model responsiveness
+
+### 🧪 Suggested Hands-On Exercises
+
+- 🗂️ Build a glossary/taxonomy scaffolding pipelines   
+- 📊 Visualize tag clusters and chunk metadata  
+- ✏️ Prompt TutorBot in explainer or quiz response modes  
+- 🔁 Evaluate chat responses for adaptive refinement
+
+---
+
+## 🔮 What Comes Next?
+
+This mini project prepares learners for:
+- 📊 Structured dashboards with more complex data (e.g. NetZero metrics, bibliometrics)
+- 🏗️ Scaling LLM workflows with structured, semantic documents, by constructing RAG pipelines with glossary and prompt tuning  
+- 🧵 Multi-chapter LLM workflows linked via semantic control layers  
+
+---
+
+# 📝 Note for Educators & Self-Paced Learners  
+
+This note describes how TutorBot Reader progresses.
+
+Its progressive capabilities, framed as modular upgrades through both pedagogical design and CI/CD automation. 
+
+This sets the stage for learners to understand the functional milestones of TutorBot across retrieval, interactivity, visualization, and contextual enrichment.
+
+## 🌟 Functional Progression and Milestones
+
+The **TutorBot Reader** evolves through modular capabilities. Each iteration introduces deeper integration of metadata, interactivity, and personalization. This roadmap helps educators design formative assessments, reflective dashboards, and adaptive retrieval workflows.
+
+### 📘 TutorBot That Can **Read**
+- 🗂️ **Data**: Markdown chapters with YAML metadata, glossaries, chunked instructional content  
+- 🧠 **Purpose**: Enables semantic and tag-based retrieval for tailored LLM prompting
+
+### 📊 TutorBot That Can **Visualize**
+- 📌 **Data**: Metadata summaries (difficulty tags, verb frequency, chunk length) using Pandas & Panel  
+- 🔍 **Purpose**: Visual dashboards aid learners in previewing chunks, glossaries, and feedback loops
+
+### 🗣️ TutorBot That Can **Reply / Respond**
+- ✏️ **Data**: Retrieved chunks, cognitive verb tags, prompt templates  
+- 📚 **Purpose**: Offers explanations, summaries, quizzes, and role-aware responses (e.g. explainer vs. examiner)
+
+### 🧭 TutorBot That Can **Contextualize**
+- 🧷 **Data**: Glossary anchors, chunk origins, session histories, embeddings via Ollama/SentenceTransformers  
+- 🎯 **Purpose**: Delivers adaptive feedback and chunk refinement based on learner history and metadata scaffolding
+
+### 🔄 CI/CD Integration Pathways
+
+The **TutorBot Reader** also contributes to the conceptual and practical understanding by using Github and/or n8n for further enhancement and automation. 
+
+| 🔧 **Bot Function** | ⚙️ **GitHub CI/CD Role** | 🔁 **n8n Enhancement** |
+|--------------------|--------------------------|------------------------|
+| 📘 **Read** | Auto-validates new chunks on commit | Pulls updates from Notion, RSS, Google Docs |
+| 📊 **Visualize** | Rebuilds metadata dashboards | Periodic glossary and chunk metrics reports |
+| 🗣️ **Respond** | Updates prompt templates and chunk selector | Logs session responses to learning dashboard |
+| 🧭 **Contextualize** | Tracks feedback, tag improvement paths | Suggests personalized enrichment resources |
+
+---
+
+
